@@ -112,9 +112,9 @@ def main():
     # Sidebar com parâmetros
     st.sidebar.header("Parâmetros do SOM")
     som_size = st.sidebar.slider("Tamanho do SOM", 3, 10, 5)
-    lr = st.sidebar.slider("Learning Rate", 0.1, 1.0, 0.3)
-    max_epochs = st.sidebar.slider("Número de Épocas", 100, 1000, 700)
-    sigma = st.sidebar.slider("Sigma", 0.1, 2.0, 1.0)
+    lr = st.sidebar.slider("Learning Rate", 0.1, 0.3, 0.3)
+    max_epochs = st.sidebar.slider("Número de Épocas", 700, 1000, 1500)
+    sigma = st.sidebar.slider("Sigma", 1.0, 2.0, 3.0)
 
     # Botão para treinar o SOM
     if st.sidebar.button("Treinar SOM"):
